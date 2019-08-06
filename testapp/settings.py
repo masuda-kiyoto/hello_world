@@ -158,22 +158,22 @@ APPLICATION_INSIGHTS = {
 
     }
 
-    LOGGING = {
-        'version': 1,
-        'disable_existing_loggers': False,
-        'handlers': {
-            # The application insights handler is here
-            'appinsights': {
-                'class': 'applicationinsights.django.LoggingHandler',
-                'level': 'WARNING'
-            }
-        },
-        'loggers': {
-            'django': {
-                'handlers': ['appinsights'],
-                'level': 'WARNING',
-                'propagate': True,
-            }
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        # The application insights handler is here
+        'appinsights': {
+            'class': 'applicationinsights.django.LoggingHandler',
+            'level': 'WARNING'
+        }
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['appinsights'],
+            'level': 'WARNING',
+            'propagate': True,
         }
     }
+}
 
