@@ -135,7 +135,7 @@ MIDDLEWARE = [
 
 APPLICATION_INSIGHTS = {
     # (required) Your Application Insights instrumentation key
-    'ikey': "00000000-0000-0000-0000-000000000000",
+    'ikey': "dfcf54c5-41c5-4553-9f6d-a34336698f65",
 
     # (optional) By default, request names are logged as the request method
     # and relative path of the URL.  To log the fully-qualified view names
