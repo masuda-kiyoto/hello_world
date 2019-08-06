@@ -156,6 +156,8 @@ APPLICATION_INSIGHTS = {
     'send_interval': 1.0, # Check every second
     'send_time': 3.0, # Wait up to 3 seconds for an event
 
+    }
+
     LOGGING = {
         'version': 1,
         'disable_existing_loggers': False,
