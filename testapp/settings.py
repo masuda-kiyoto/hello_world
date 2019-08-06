@@ -119,3 +119,59 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MIDDLEWARE = [
+    # ... or whatever is below for you ...
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # ... or whatever is above for you ...
+    'applicationinsights.django.ApplicationInsightsMiddleware',   # Add this middleware to the end
+]
+
+APPLICATION_INSIGHTS = {
+    # (required) Your Application Insights instrumentation key
+    'ikey': "00000000-0000-0000-0000-000000000000",
+
+    # (optional) By default, request names are logged as the request method
+    # and relative path of the URL.  To log the fully-qualified view names
+    # instead, set this to True.  Defaults to False.
+    'use_view_name': True,
+
+    # (optional) To log arguments passed into the views as custom properties,
+    # set this to True.  Defaults to False.
+    'record_view_arguments': True,
+
+    # (optional) Exceptions are logged by default, to disable, set this to False.
+    'log_exceptions': False,
+
+    # (optional) Events are submitted to Application Insights asynchronously.
+    # send_interval specifies how often the queue is checked for items to submit.
+    # send_time specifies how long the sender waits for new input before recycling
+    # the background thread.
+    'send_interval': 1.0, # Check every second
+    'send_time': 3.0, # Wait up to 3 seconds for an event
+
+    LOGGING = {
+        'version': 1,
+        'disable_existing_loggers': False,
+        'handlers': {
+            # The application insights handler is here
+            'appinsights': {
+                'class': 'applicationinsights.django.LoggingHandler',
+                'level': 'WARNING'
+            }
+        },
+        'loggers': {
+            'django': {
+                'handlers': ['appinsights'],
+                'level': 'WARNING',
+                'propagate': True,
+            }
+        }
+    }
+
