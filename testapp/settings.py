@@ -125,22 +125,6 @@ APPLICATION_INSIGHTS = {
     # (required) Your Application Insights instrumentation key
     'ikey': "0b6874ae-6834-4e5b-a4de-b314b1297153",
 
-    # (optional) By default, request names are logged as the request method
-    # and relative path of the URL.  To log the fully-qualified view names
-    # instead, set this to True.  Defaults to False.
-    'use_view_name': True,
-
-    # (optional) To log arguments passed into the views as custom properties,
-    # set this to True.  Defaults to False.
-    'record_view_arguments': True,
-
-    # (optional) Events are submitted to Application Insights asynchronously.
-    # send_interval specifies how often the queue is checked for items to submit.
-    # send_time specifies how long the sender waits for new input before recycling
-    # the background thread.
-    'send_interval': 1.0, # Check every second
-    'send_time': 3.0, # Wait up to 3 seconds for an event
-
     }
 
 LOGGING = {
