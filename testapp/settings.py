@@ -123,7 +123,7 @@ STATIC_URL = '/static/'
 
 APPLICATION_INSIGHTS = {
     # (required) Your Application Insights instrumentation key
-    'ikey': "dfcf54c5-41c5-4553-9f6d-a34336698f65",
+    'ikey': "0b6874ae-6834-4e5b-a4de-b314b1297153",
 
     # (optional) By default, request names are logged as the request method
     # and relative path of the URL.  To log the fully-qualified view names
