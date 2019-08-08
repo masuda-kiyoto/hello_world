@@ -15,6 +15,6 @@ class Test(View):
         logger.debug('This is debug message.')
         logger.info('This is info message.')
         logger.warn('This is warning message.')
-        logger.error('This is error message.')
-        logger.critical('This is critical message.')
+        logger.error('エラーだよ！')
+        logger.critical('重大なエラーだよ！')
         return render(request, 'hello_world.html')
