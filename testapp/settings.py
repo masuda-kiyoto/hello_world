@@ -142,6 +142,11 @@ LOGGING = {
             'handlers': ['appinsights'],
             'level': 'WARNING',
             'propagate': True,
+        },
+        'app': {
+            'handlers': ['appinsights'],
+            'level': 'WARNING',
+            'propagate': True,
         }
     }
 }
