@@ -7,10 +7,6 @@ logger = logging.getLogger(__name__)
 # Create your views here.
 class Test(View):
 
-    fmt = "%(asctime)s %(levelname)s %(name)s :%(message)s"
-
-    logging.basicConfig(level=logging.DEBUG, format=fmt)
-
     def get(self, request):
         logger.debug('This is debug message.')
         logger.info('This is info message.')
