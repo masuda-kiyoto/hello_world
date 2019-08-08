@@ -7,7 +7,7 @@ enable('095f40cf-8be3-416f-8d93-c12b17d178b2')
 
 logger = logging.getLogger(__name__)
 
-fmt = "%(name)s :%(message)s"
+fmt = "%(levelname)s %(name)s :%(message)s"
 
 logging.basicConfig(level=logging.DEBUG, format=fmt)
 
