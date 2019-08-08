@@ -25,7 +25,7 @@ SECRET_KEY = '=p!iz2&djy0c$e%i$p&e_=$&_fs-mjz6p)s1)4vp%r@5ih=&h$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['yagi.tsolpd.com']
+ALLOWED_HOSTS = ['tomiyama.tsolpd.com']
 
 
 # Application definition
@@ -123,7 +123,7 @@ STATIC_URL = '/static/'
 
 APPLICATION_INSIGHTS = {
     # (required) Your Application Insights instrumentation key
-    'ikey': "0b6874ae-6834-4e5b-a4de-b314b1297153",
+    'ikey': "095f40cf-8be3-416f-8d93-c12b17d178b2",
 
     }
 
