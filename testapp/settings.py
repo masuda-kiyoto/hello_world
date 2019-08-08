@@ -134,14 +134,14 @@ LOGGING = {
         # The application insights handler is here
         'appinsights': {
             'class': 'applicationinsights.django.LoggingHandler',
-            'level': 'WARNING'
-        }
+            'level': 'DEBUG',
+        },
     },
     'loggers': {
         'django': {
             'handlers': ['appinsights'],
-            'level': 'WARNING',
+            'level': 'DEBUG',
             'propagate': True,
-        }
-    }
+        },
+    },
 }
