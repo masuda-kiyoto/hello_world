@@ -2,7 +2,7 @@ from django.views import View
 from django.shortcuts import render, redirect
 import logging
 
-logger = logging.getLogger('testapp')
+logger = logging.getLogger('app')
 
 # Create your views here.
 class Test(View):
