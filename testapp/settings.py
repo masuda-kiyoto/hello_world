@@ -123,7 +123,7 @@ STATIC_URL = '/static/'
 
 APPLICATION_INSIGHTS = {
     # (required) Your Application Insights instrumentation key
-    'ikey': "0b6874ae-6834-4e5b-a4de-b314b1297153",
+    'ikey': "095f40cf-8be3-416f-8d93-c12b17d178b2",
 
     }
 
