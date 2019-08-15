@@ -48,7 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'applicationinsights.django.ApplicationInsightsMiddleware',
+    # 'applicationinsights.django.ApplicationInsightsMiddleware',
 ]
 
 ROOT_URLCONF = 'testapp.urls'
@@ -121,32 +121,32 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-APPLICATION_INSIGHTS = {
-    # (required) Your Application Insights instrumentation key
-    'ikey': "07ffe2a8-59b7-4510-8541-56d986a1ad76",
-
-    }
-
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        # The application insights handler is here
-        'appinsights': {
-            'class': 'applicationinsights.django.LoggingHandler',
-            'level': 'WARNING'
-        }
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['appinsights'],
-            'level': 'WARNING',
-            'propagate': True,
-        },
-        'app': {
-            'handlers': ['appinsights'],
-            'level': 'WARNING',
-            'propagate': True,
-        }
-    }
-}
+# APPLICATION_INSIGHTS = {
+#     # (required) Your Application Insights instrumentation key
+#     'ikey': "07ffe2a8-59b7-4510-8541-56d986a1ad76",
+#
+#     }
+#
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'handlers': {
+#         # The application insights handler is here
+#         'appinsights': {
+#             'class': 'applicationinsights.django.LoggingHandler',
+#             'level': 'WARNING'
+#         }
+#     },
+#     'loggers': {
+#         'django': {
+#             'handlers': ['appinsights'],
+#             'level': 'WARNING',
+#             'propagate': True,
+#         },
+#         'app': {
+#             'handlers': ['appinsights'],
+#             'level': 'WARNING',
+#             'propagate': True,
+#         }
+#     }
+# }
