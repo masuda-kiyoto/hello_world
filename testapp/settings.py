@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'testapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'employee-ledger.mysql.database.azure.com', #os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'employee_ledger_test', #os.path.join(BASE_DIR, 'db.sqlite3'),
         'USER': 'masuda@employee-ledger',
         'PASSWORD': 'Tsolpd201908',
-        'HOST': '104.215.5.10',
+        'HOST': 'employee-ledger.mysql.database.azure.com',
         'PORT': '3306'
     }
 }
