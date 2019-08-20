@@ -25,7 +25,7 @@ SECRET_KEY = '=p!iz2&djy0c$e%i$p&e_=$&_fs-mjz6p)s1)4vp%r@5ih=&h$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ishida.tsolpd.com']
+ALLOWED_HOSTS = ['koda.tsolpd.com']
 
 
 # Application definition
@@ -77,10 +77,15 @@ WSGI_APPLICATION = 'testapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'employee-ledger.mysql.database.azure.com', #os.path.join(BASE_DIR, 'db.sqlite3'),
+        'USER': 'masuda@employee-ledger',
+        'PASSWORD': 'Tsolpd201908',
+        'HOST': '104.215.5.10',
+        'PORT': '3306'
     }
 }
+
 
 
 # Password validation
