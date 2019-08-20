@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'employee_ledger_test', #os.path.join(BASE_DIR, 'db.sqlite3'),
         'USER': 'masuda@employee-ledger',
         'PASSWORD': 'Tsolpd201908',
-        'HOST': 'employee.mysql.database.azure.com',
+        'HOST': 'employee-ledger.mysql.database.azure.com',
         'PORT': '3306'
     }
 }
