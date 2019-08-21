@@ -25,7 +25,7 @@ SECRET_KEY = '=p!iz2&djy0c$e%i$p&e_=$&_fs-mjz6p)s1)4vp%r@5ih=&h$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['koda.tsolpd.com']
+ALLOWED_HOSTS = ['masuda.tsolpd.com']
 
 
 # Application definition
